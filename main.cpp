@@ -40,7 +40,8 @@ int main()
                 if(indiceTableau!=0)
                   {
                     double montantsTotauxVerses=0;                    
-                    
+                    cout<<"Affichage du releve de paie : "<<endl;
+                    cout<<"============================== "<<endl<<endl;
                     for(int i=0;i<indiceTableau;i++){
                         tableauEmployees[i]->afficherEtatPaie();
                         montantsTotauxVerses+=tableauEmployees[i]->calculPaieBrute();                        
@@ -54,6 +55,7 @@ int main()
                     cout<<"  Montants totaux verses de "<<montantsTotauxVerses<<" $"<<endl;
                     cout<<"  Impots a transferer CA de "<<montantTransfererCA<<" $"<<endl;
                     cout<<"  Impots a transferer QC de "<<montantTransfererQC<<" $"<<endl;
+                    cout<<"========================================= "<<endl;
                   } 
                   else 
                   {
@@ -70,9 +72,9 @@ int main()
                      cout<<"Le tableau des employees est vide !, rien a supprimer "<<endl;
                  }                                                
                  break;
-        case 6 : cout<<"Merci d'avoir utiliser ce logiciel "<<endl; 
+        case 6 : cout<<" Merci d'avoir utiliser ce logiciel "<<endl<<endl; 
                  break;
-        default : cout<<"Mauvais choix ! "<<endl; 
+        default : cout<<" Mauvais choix ! "<<endl; 
     }  
     
    } while(choix!=6);
